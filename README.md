@@ -1,7 +1,7 @@
 # Java-Web
 Projeto de programação de sistemas 2
 
-### Banco de dados
+### Banco de dados (JDBC)
   - tabelas criadas, utilizando chave primária
 
 ### Aplicação
