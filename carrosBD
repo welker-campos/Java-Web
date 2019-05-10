@@ -1,6 +1,7 @@
--- Criação da tabela
+-- Verificar dados da tabela
 select * from carros;
 
+-- Criação da tabela
 create table carros (
  idCarros bigint not null
  generated always as identity (start with 1, increment by 1),
