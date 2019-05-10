@@ -1,0 +1,32 @@
+-- Verificar dados da tabela
+select * from jogos;
+
+-- Criação da tabela
+create table jogos (
+ idJogos bigint not null
+ generated always as identity (start with 1, increment by 1),
+ timeA varchar(20) not null,
+ golsA integer not null,
+ timeB varchar(20) not null,
+ golsB integer not null,
+ primary key (idJogos)
+);
+
+-- Colocação de dados na tabela
+ insert into jogos(timeA,golsA,timeB,golsB)
+ values('Corinthians',2,'São Paulo',1);
+
+ insert into jogos(timeA,golsA,timeB,golsB)
+ values('Palmeiras',1,'Flamengo',1);
+
+-- Atualização de dados
+ update jogos
+ set golsA = 3
+ where idJogos = 1;
+
+ update jogos
+ set timeB = 'Gremio'
+ where idJogos = 2;
+
+-- Deletar dados
+delete from jogos where idJogos = 1;
